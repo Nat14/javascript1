@@ -30,7 +30,7 @@ var total = position1 + position3 + position5 + position7 + position9 + position
 parseInt(creditCard[1]) + parseInt(creditCard[3]) + parseInt(creditCard[5]) + parseInt(creditCard[7]) + parseInt(creditCard[9]) +
 parseInt(creditCard[11]) + parseInt(creditCard[13])
 
-var lastDigitShouldbe = total%10
+var lastDigitShouldbe = 10 - (total%10)
 
 console.log("This is total: " + total);
 console.log("This is last Digit Should be: " + lastDigitShouldbe);
